@@ -62,7 +62,6 @@ namespace CSHra
 
         PressedArrow pressedArrow = PressedArrow.none;
 
-        // HACK na odchyceni stisku sipek
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Up)
