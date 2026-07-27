@@ -1,0 +1,27 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio / .NET user state
+*.user
+*.suo
+.vs/
+
+# NuGet generated files
+project.assets.json
+project.nuget.cache
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# Office and editor temporary files
+~$*
+~WRL*.tmp
+*.tmp
+
+# Local documentation exports
+cshra/documentation.*
+
+# OS files
+Thumbs.db
+Desktop.ini

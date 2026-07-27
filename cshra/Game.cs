@@ -325,7 +325,8 @@ namespace CSHra
         public void loadMap(string cesta)
         {
 
-            System.IO.StreamReader sr = new System.IO.StreamReader("../../../Resources/" + cesta);
+            string mapPath = System.IO.Path.Combine(AppContext.BaseDirectory, "Resources", cesta);
+            System.IO.StreamReader sr = new System.IO.StreamReader(mapPath);
             width = int.Parse(sr.ReadLine());
             height = int.Parse(sr.ReadLine());
             plan = new char[width, height];
@@ -354,7 +355,8 @@ namespace CSHra
 
         public void loadIcons(string cesta)
         {
-            Bitmap bmp = new Bitmap("../../../Resources/" + cesta);
+            string iconsPath = System.IO.Path.Combine(AppContext.BaseDirectory, "Resources", cesta);
+            Bitmap bmp = new Bitmap(iconsPath);
             this.tileSize = bmp.Height;     // 30
             int n = bmp.Width / tileSize;
             icons = new Bitmap[n];

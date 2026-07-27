@@ -72,7 +72,7 @@
             KeyPreview = true;
             Name = "Form1";
             Text = "Pac-Man";
-            Icon = new Icon("../../../Resources/icon.ico");
+            Icon = new Icon(System.IO.Path.Combine(AppContext.BaseDirectory, "Resources", "icon.ico"));
             KeyUp += Form1_KeyUp;
             BackColor = Color.Black;
             ResumeLayout(false);
